@@ -1,0 +1,12 @@
+#!/usr/bin/csh -f
+foreach a(freshapples freshbanana freshoranges rottenapples rottenbanana rottenoranges)
+python sample.py data_set/${a} train test
+cd train 
+mkdir $a
+mv -f *png ${a}/.
+cd ..
+cd test
+mkdir $a 
+mv -f *png ${a}/.
+cd ..
+end
