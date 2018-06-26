@@ -10,5 +10,7 @@ Both giving different results
 
 Please go through the keras documentation below:
 https://keras.io/models/sequential/
+
     evaluate(self, x=None, y=None, batch_size=None, verbose=1, sample_weight=None, steps=None)
+    
     predict(self, x, batch_size=None, verbose=0, steps=None)
